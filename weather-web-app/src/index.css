@@ -9,6 +9,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 
 :root {
-  background-color: rgba(62, 61, 87, 1);
+  background-image: linear-gradient(
+    to right top,
+    #052f6f,
+    #0065ab,
+    #009aaf,
+    #00c97a,
+    #a8eb12
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   font-family: "Varela", sans-serif;
 }

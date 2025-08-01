@@ -1,0 +1,10 @@
+.carousel-main {
+  background-image: linear-gradient(
+    to right top,
+    #052f6f,
+    #0065ab,
+    #009aaf,
+    #00c97a,
+    #a8eb12
+  );
+}

@@ -1,0 +1,11 @@
+import Carousel from "react-bootstrap/Carousel"
+import Container from "react-bootstrap/esm/Container"
+import { Row, Col } from "react-bootstrap/esm"
+import { useState } from "react"
+import "./HomepageMain.css"
+
+const endPoint = "https://api.openweathermap.org/data/2.5/weather?q="
+
+const HomepageMain2 = () => {}
+
+export default HomepageMain2

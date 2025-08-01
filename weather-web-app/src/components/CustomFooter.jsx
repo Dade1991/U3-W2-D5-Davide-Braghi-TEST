@@ -7,13 +7,19 @@ function CustomFooter() {
       <Container fluid className="footer-custom">
         <Row className="text-center">
           <Col>
-            <p className="m-0 text-light">Link1</p>
+            <a className="m-0 text-light" href="">
+              Settings
+            </a>
           </Col>
           <Col>
-            <p className="m-0 text-light">Link2</p>
+            <a className="m-0 text-light" href="">
+              Legal Notice
+            </a>
           </Col>
           <Col>
-            <p className="m-0 text-light">Link3</p>
+            <a className="m-0 text-light" href="">
+              Contact Us
+            </a>
           </Col>
         </Row>
         <hr className="mx-auto" />

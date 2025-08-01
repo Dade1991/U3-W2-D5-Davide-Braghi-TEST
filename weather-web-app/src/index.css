@@ -1,0 +1,11 @@
+/* :root {
+  background-color: linear-gradient(
+    0deg,
+    rgba(90, 86, 184, 1),
+    rgba(62, 61, 87, 1)
+  );
+} */
+
+:root {
+  background-color: rgba(62, 61, 87, 1);
+}

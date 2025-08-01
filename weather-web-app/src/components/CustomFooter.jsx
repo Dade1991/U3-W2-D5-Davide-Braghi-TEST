@@ -1,25 +1,26 @@
 import { Container, Row, Col } from "react-bootstrap"
 import "./CustomFooter.css"
+import { Link } from "react-router-dom"
 
 function CustomFooter() {
   return (
     <>
       <Container fluid className="footer-custom">
-        <Row className="text-center">
+        <Row className="text-center pt-3">
           <Col>
-            <a className="m-0 text-light" href="">
+            <Link className="m-0 text-light" to="">
               Settings
-            </a>
+            </Link>
           </Col>
           <Col>
-            <a className="m-0 text-light" href="">
+            <Link className="m-0 text-light" to="">
               Legal Notice
-            </a>
+            </Link>
           </Col>
           <Col>
-            <a className="m-0 text-light" href="">
+            <Link className="m-0 text-light" to="">
               Contact Us
-            </a>
+            </Link>
           </Col>
         </Row>
         <hr className="mx-auto" />

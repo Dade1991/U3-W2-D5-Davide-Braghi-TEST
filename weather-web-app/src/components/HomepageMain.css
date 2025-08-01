@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
 .carousel-main {
   background-image: linear-gradient(
     to right top,
@@ -7,6 +9,7 @@
     #00c97a,
     #a8eb12
   );
+  font-family: "Varela", sans-serif;
 }
 
 span {
@@ -14,6 +17,19 @@ span {
   margin-left: 12px;
   text-shadow: 0px -1px 15px #5624e0;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 3em;
+  margin-left: 40px;
+  text-shadow: 0px -1px 15px #5624e0;
+  font-weight: 700;
+}
+
+i {
+  font-size: 1.5em;
+  margin-right: 12px;
+  text-shadow: 0px -1px 15px #5624e0;
 }
 
 .carousel-control-prev,

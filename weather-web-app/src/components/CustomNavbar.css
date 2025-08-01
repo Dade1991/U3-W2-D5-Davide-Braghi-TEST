@@ -18,3 +18,12 @@
 .navbar-name {
   font-size: 1.5em;
 }
+
+.navbar-toggler {
+  background-color: #0082ad; /* Change to your desired color */
+  border-color: #0082ad;
+}
+
+.navbar-toggler-icon {
+  margin: 0px;
+}

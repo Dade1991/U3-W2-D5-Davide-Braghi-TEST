@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import CustomNavbar from "./components/CutomNavbar"
 import CustomFooter from "./components/CustomFooter"
 import HomepageMainRedo from "./components/HomepageMainRedo"
+import SingleCityWeather from "./components/SingleCityWeather"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <CustomNavbar />
         <Routes>
           <Route path="/" element={<HomepageMainRedo />} />
+          <Route path="/search" element={<SingleCityWeather />} />
         </Routes>
         <CustomFooter />
       </BrowserRouter>

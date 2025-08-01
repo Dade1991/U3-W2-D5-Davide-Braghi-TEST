@@ -19,7 +19,7 @@ const HomepageMainRedo = () => {
         .then((res) => res.json())
         .then((data) => {
           setGetWeather((prevData) => [...prevData, data])
-          console.log(data)
+          // console.log(data)
         })
         .catch((err) => {
           console.error(`Error fetching weather`, err)
@@ -31,15 +31,17 @@ const HomepageMainRedo = () => {
     <Container fluid className="carousel-main vh-100">
       <div>
         <Link to="/">
-          <h2 className="text-light pt-5">Welcome to Epi Weather.com</h2>
+          <h2 className="text-light pt-5">
+            Welcome to Epi Weather.com <i className="fas fa-cloud-sun"></i>
+          </h2>
         </Link>
       </div>
       <Carousel indicators={false} data-bs-theme="dark" className="pt-5">
         {getWeather.map((data, index) => (
           <Carousel.Item className="px-5" key={index}>
             <Row className="selected-city py-3 mt-5 mb-5">
-              <Col className="text-light">
-                <h1 className="mb-5">
+              <Col className="text-light px-5">
+                <h1 className="mb-3">
                   Location: <span>{data.name}</span>
                 </h1>
                 <div className="d-flex flex-column flex-md-row justify-content-between">
@@ -57,10 +59,12 @@ const HomepageMainRedo = () => {
                   </div>
                   <div className="d-flex flex-column mt-3 mt-md-0">
                     <p className="me-2">
-                      Min Temp: <span>{data.main.temp_min}</span> °C
+                      <i className="fas fa-temperature-low"></i> Min Temp:{" "}
+                      <span>{data.main.temp_min}</span> °C
                     </p>
                     <p>
-                      Max Temp: <span>{data.main.temp_max}</span> °C
+                      <i className="fas fa-temperature-high"></i> Max Temp:{" "}
+                      <span>{data.main.temp_max}</span> °C
                     </p>
                   </div>
                 </div>

@@ -3,13 +3,28 @@ import Container from "react-bootstrap/Container"
 import Form from "react-bootstrap/Form"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
-import NavDropdown from "react-bootstrap/NavDropdown"
+import "./CustomNavbar.css"
 
 function CustomNavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand className="text-light d-flex flex-row" href="#home">
+          <div className="navbar-logo-container me-3">
+            <img
+              alt=""
+              src="src\assets\img\Weather logo.png"
+              width="30"
+              height="30"
+              className="navbar-logo d-inline-block align-top"
+            />
+          </div>
+          <p className="navbar-name my-auto">Epi Weather</p>
+        </Navbar.Brand>
+
+        {/* <div>
+          <img src="../public/Weather logo.png" alt="" />
+        </div> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -17,30 +32,24 @@ function CustomNavbar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
+            <Nav.Link className="text-light" href="#action1">
+              Home
+            </Nav.Link>
+            <Nav.Link className="text-light" href="#action2">
               Link
+            </Nav.Link>
+            <Nav.Link className="text-light" href="#">
+              About Us
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Insert your location"
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-info">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

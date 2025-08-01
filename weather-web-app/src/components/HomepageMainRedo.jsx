@@ -6,7 +6,9 @@ import "./HomepageMain.css"
 
 const endPoint = "https://api.openweathermap.org/data/2.5/weather?q="
 
-const HomepageMain2 = () => {
+const HomepageMainRedo = () => {
+  const [getWeather, setGetWeather] = useState([])
+
   return (
     <Container fluid className="carousel-main vh-100">
       <div>
@@ -48,4 +50,4 @@ const HomepageMain2 = () => {
   )
 }
 
-export default HomepageMain2
+export default HomepageMainRedo
